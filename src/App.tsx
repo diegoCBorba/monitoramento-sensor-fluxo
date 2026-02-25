@@ -66,7 +66,7 @@ function App() {
             <Metrics data={liveData} />
           </div>
 
-          <h2 style={{ marginTop: 0 }}>Teste de Vazão Controlado</h2>
+          <h2 style={{ marginBottom:20 }}>Teste de Vazão Controlado</h2>
           <div>
             <ExperimentControl
               onStart={startCollection}

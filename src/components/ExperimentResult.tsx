@@ -9,9 +9,10 @@ type Props = {
   } | null
 }
 
+// quero deixar a table com o fundo branco
 const styles = {
-  container: { marginTop: 20 },
-  table: { borderCollapse: 'collapse' as const, width: '100%' },
+  container: { marginTop: 20, padding: 20, border: '1px solid #ddd', borderRadius: 8, backgroundColor: '#f9f9f9' },
+  table: { borderCollapse: 'collapse' as const, width: '100%', marginTop: 10, backgroundColor: '#fff' },
   cell: { border: '1px solid #ddd', padding: '8px' },
   th: { border: '1px solid #ddd', padding: '8px', textAlign: 'left' as const },
   td: { border: '1px solid #ddd', padding: '8px' },

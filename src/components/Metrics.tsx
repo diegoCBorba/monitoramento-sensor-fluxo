@@ -28,29 +28,18 @@ function Metric({ title, value, unit }: { title: string; value: string; unit: st
       style={{
         padding: 20,
         borderRadius: 12,
-        background: "linear-gradient(135deg, #2a2a2a 0%, #1e1e1e 100%)",
-        color: "#fff",
-        boxShadow: "0 4px 12px rgba(0, 0, 0, 0.3)",
+        border: '1px solid #ddd',
+        backgroundColor: "#f9f9f9",
+        color: "black",
         transition: "transform 0.2s, box-shadow 0.2s",
-        cursor: "pointer",
-      }}
-      onMouseEnter={(e) => {
-        const el = e.currentTarget as HTMLDivElement;
-        el.style.transform = "translateY(-4px)";
-        el.style.boxShadow = "0 8px 24px rgba(0, 0, 0, 0.5)";
-      }}
-      onMouseLeave={(e) => {
-        const el = e.currentTarget as HTMLDivElement;
-        el.style.transform = "translateY(0)";
-        el.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.3)";
       }}
     >
-      <p style={{ margin: "0 0 8px 0", fontSize: 12, color: "#aaa", textTransform: "uppercase", letterSpacing: 1 }}>
+      <p style={{ margin: "0 0 8px 0", fontSize: 12, color: '#333', textTransform: "uppercase", letterSpacing: 1 }}>
         {title}
       </p>
       <div style={{ display: "flex", alignItems: "baseline", gap: 6 }}>
         <span style={{ fontSize: 28, fontWeight: "bold" }}>{value}</span>
-        <span style={{ fontSize: 12, color: "#888" }}>{unit}</span>
+        <span style={{ fontSize: 12, color: '#333' }}>{unit}</span>
       </div>
     </div>
   )

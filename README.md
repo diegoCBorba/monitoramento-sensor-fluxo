@@ -5,7 +5,7 @@ Projeto web simples para monitorar em tempo real dados enviados por um ESP32-S3-
 
 Principais campos de [`FlowData`](src/types/FlowData.ts):
 - `flow1` — vazão da bomba (L/min)
-- `flow2` — vazão da saída/extravazor(ladrão) (L/min)
+- `flow2` — vazão da saída/extravasor(ladrão) (L/min)
 - `diff_raw` — diferença real (flow1 - flow2)
 - `diff_abs` — diferença em módulo
 - `diff_ma` — diferença com média móvel
